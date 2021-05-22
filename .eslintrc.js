@@ -20,5 +20,8 @@ module.exports = {
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
     'no-use-before-define': 'off',
+    'object-curly-newline': 'off',
+    'import/extensions': 'off',
+    'react/jsx-one-expression-per-line': 'off',
   },
 };
