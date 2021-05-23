@@ -14,6 +14,13 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint'],
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
+  },
   rules: {
     'react/jsx-filename-extension': [
       2,
@@ -23,5 +30,6 @@ module.exports = {
     'object-curly-newline': 'off',
     'import/extensions': 'off',
     'react/jsx-one-expression-per-line': 'off',
+    'comma-dangle': 'off',
   },
 };
